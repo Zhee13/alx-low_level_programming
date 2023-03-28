@@ -1,5 +1,6 @@
 #ifndef MAIN_H_
 #define MAIN_H_
+#include <stdio.h>
 int _atoi(char *s);
 char *_strcpy(char *dest, char *src);
 void print_array(int *a, int n);
