@@ -1,13 +1,15 @@
 #include "main.h"
+
 /**
- * *_strcat - main function
- * @dest: character 1
- * @src: character 2
+ * *_strncat - main function
+ * @dest: parameter
+ * @src: parameter
+ * @n: parameter
  *
- * Return: Returns a pointer to the resulting string dest
+ * Return:  a pointer to the resulting string dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int destlen = 0;
 	int srclen = 0;
@@ -17,15 +19,7 @@ char *_strcat(char *dest, char *src)
 		destlen++;
 	for (i = 0 ; src[i] != '\0' ; i++)
 		srclen++;
-	for (i = 0 ; i <= srclen ; i++)
+	for (i = 0 ; i < n ; i++)
 		dest[destlen + i] = src[i];
 	return (dest);
 }
-
-
-
-
-
-
-
-
